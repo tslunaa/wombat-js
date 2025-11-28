@@ -1,0 +1,42 @@
+{
+  "name": "wombat-js",
+  "displayName": "Wombat.js",
+  "description": "Мини-клон Quokka: выполняет текущий JS/TS файл и показывает значения глобальных переменных в редакторе.",
+  "version": "0.0.1",
+  "publisher": "tsaia",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Debuggers"
+  ],
+  "activationEvents": [
+    "onCommand:wombat.runFile",
+    "onCommand:wombat.clearDecorations"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wombat.runFile",
+        "title": "Wombat: Run current file"
+      },
+      {
+        "command": "wombat.clearDecorations",
+        "title": "Wombat: Clear decorations"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
