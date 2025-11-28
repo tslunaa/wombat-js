@@ -4,6 +4,10 @@
   "description": "Мини-клон Quokka: выполняет текущий JS/TS файл и показывает значения глобальных переменных в редакторе.",
   "version": "0.0.1",
   "publisher": "tsaia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tslunaa/wombat-js"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
